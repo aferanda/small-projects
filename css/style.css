@@ -3,9 +3,14 @@
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    margin: 100px;
+    margin: 150px;
+    width: 100%;
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: top left, bottom right;
 }
+
+/* Conteúdo Superior */
 
 .container-principal {
     width: 100%;
@@ -15,7 +20,8 @@ body {
 .sobre {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;   
+    width: 50%;
+    min-width: 450px;   
 }
 
 .titulo-sobre {
@@ -23,14 +29,16 @@ body {
     font-size: 3em;
     color: hsl(300, 43%, 22%);
     padding: 15px 0;
-    width: 70%;
+    width: 450px;
 }
 
 .texto-sobre {
     font-weight: 400;
-    color: hsl(300, 43%, 22%);
+    color: hsl(303, 10%, 53%);
     padding: 15px 0;
-    width: 70%;
+    width: 450px;
+    line-height: 1.5;
+    font-weight: 400px;
 }
 
 .rated {
@@ -52,15 +60,15 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    width: 100%;
+    width: 400px;
 }
 
 .rated-box-second {
-    
+    margin-left: 50px;
 }
 
 .rated-box-third {
-    
+    margin-left: 100px;
 }
 
 .rated-text {
@@ -77,6 +85,10 @@ body {
     margin-left: 30px;
     background-repeat: space;
 }
+
+/* Conteúdo Inferior */
+
+
 
 
 /* Rodapé */
