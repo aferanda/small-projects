@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    min-width: 450px;
     font-weight: 700;
     font-size: smaller;
     color: hsl(300, 43%, 22%);
@@ -112,8 +113,10 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 26%;
+    min-width: 200px;
     display: flex;   
     flex-wrap: wrap;
+    
 }
 
 .container-comentario1 {
