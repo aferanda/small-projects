@@ -5,47 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Profile card component</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+  
 </head>
 
 <body>
-  <div class="box">
-    <div>
-      <div>
+  <main class="conteudoPrincipal">
+    <div class="container">
+      <div class="perfil">
         <img src="images/image-victor.jpg" alt="Victor">
-        <div class="container">
-          <div class="title">Victor Crest</div>
-          <div class="age">26</div>
-          <div class="subtitle">London</div>
+        <div class="perfil-dados">
+          <div class="perfil-id">
+            <span class="title">Victor Crest</span>
+            <span class="age">26</span>
+          </div>
+          <span class="cidade">London</span>
         </div>
       </div>
-      <div class="container2">
-        <div>
-          <div class="title">80K</div>
-          <div class="subtitle">Followers</div>
-        </div>
-        <div>
-          <div class="title">803K</div>
-          <div class="subtitle">Likes</div>
-        </div>
-        <div>
-          <div class="title">1.4K</div>
-          <div class="subtitle">Photos</div>
-        </div>
+      <div class="estatisticas">
+        <ul class="estatisticas-lista">
+          <li class="title">80K</li>
+          <li class="subtitle">Followers</li>
+        </ul>
+        <ul class="estatisticas-lista">
+          <li class="title">803K</li>
+          <li class="subtitle">Likes</li>
+        </ul>
+        <ul class="estatisticas-lista">
+          <li class="title">1.4K</li>
+          <li class="subtitle">Photos</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Amanda Fernandes</a>.
-  </div>
+  </main>
+  <footer>
+    <section class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Amanda Fernandes</a>.
+    </section>
+  </footer>
 </body>
-
 </html>
