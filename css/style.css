@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    margin: 100px;
+}
+
+.container-principal {
+    width: 100%;
+    display: flex;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;   
+}
+
+.titulo-sobre {
+    font-weight: 700;
+    font-size: 3em;
+    color: hsl(300, 43%, 22%);
+    padding: 15px 0;
+    width: 70%;
+}
+
+.texto-sobre {
+    font-weight: 400;
+    color: hsl(300, 43%, 22%);
+    padding: 15px 0;
+    width: 70%;
+}
+
+.rated {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-weight: 700;
+    font-size: smaller;
+    color: hsl(300, 43%, 22%);
+}
+
+.rated-text {
+    padding: 20px 0 20px 50px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+}
+
+.rated-box {
+    align-items: center;
+    min-width: 100%;
+}
+
+.rated-box-first, .rated-box-second, .rated-box-third {
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.rated-box-second {
+    
+}
+
+.rated-box-third {
+    
+}
+
+.star {
+    background-image: url("../images/icon-star.svg");
+    width: 85px;
+    height: 20px;
+    padding-left: ;
+    background-repeat: repeat space;
+}
+
+
+/* Rodapé */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
