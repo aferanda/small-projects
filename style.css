@@ -1,15 +1,16 @@
 html, body {
-    margin: 0;
     height: 100%;
 }
 
 body {
-    padding: 0;
     width: 100%;
     position: relative;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
     text-decoration: hsl(0, 0%, 59%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 140% right 140%, bottom 310% left 140%;
     background-color: hsl(185, 75%, 39%);
 }
 
@@ -29,8 +30,7 @@ body {
     height: 100%;
     margin: 25% 10%;
     border-radius: 15px;
-    background-image: radial-gradient(rgba(138, 241, 255, 0.658), rgb(97, 187, 199), white);
-    /* background-image: linear-gradient(to bottom, hsla(185, 69%, 72%, 0.562), white); */
+    background-image: url(images/bg-pattern-card.svg);
 }
 
 .container .perfil {
