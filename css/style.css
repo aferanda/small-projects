@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 body {
+    max-width: 1440px;
+    max-height: 800px;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    margin: 150px;
-    width: 100%;
+    padding: 200px;
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat no-repeat;
     background-position: top left, bottom right;
+}
+
+.geral {
+    min-height: 100%;
+    position: relative;
 }
 
 /* Conteúdo Superior */
 
 .container-principal {
     width: 100%;
+    min-height: 300px;
     display: flex;
 }
 
@@ -21,12 +28,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    min-width: 450px;   
+    min-width: 450px;
 }
 
 .titulo-sobre {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3.5em;
     color: hsl(300, 43%, 22%);
     padding: 15px 0;
     width: 450px;
@@ -48,11 +55,14 @@ body {
     font-weight: 700;
     font-size: smaller;
     color: hsl(300, 43%, 22%);
+    padding: 20px 0 20px 0;
 }
 
 .rated-box {
     align-items: center;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .rated-box-first, .rated-box-second, .rated-box-third {
@@ -60,15 +70,16 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    width: 400px;
+    width: 450px;
+    height: 60px;
+}
+
+.rated-box-first {
+    margin-right: 100px;
 }
 
 .rated-box-second {
-    margin-left: 50px;
-}
-
-.rated-box-third {
-    margin-left: 100px;
+    margin-right: 50px;
 }
 
 .rated-text {
@@ -86,12 +97,76 @@ body {
     background-repeat: space;
 }
 
-/* Conteúdo Inferior */
+/* Conteúdo Secundário */
 
+.container-secundario {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+.container-comentario1, .container-comentario2, .container-comentario3 {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 10px;
+    width: 26%;
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+.container-comentario1 {
+    margin-top: 50px;
+}
+
+.container-comentario2 {
+    margin-top: 70px;
+}
+
+.container-comentario3 {
+    margin-top: 90px;
+}
+
+.foto {
+    border-radius: 50%;
+    align-self: flex-start;
+    max-height: 40px;
+}
+
+.nome {
+    color: hsl(300, 24%, 96%);
+    font-weight: 700;
+    font-size: small;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.info {
+    color: hsl(333, 80%, 67%);
+    font-size: smaller;
+    margin-left: 20px;
+    height: 20px;
+ }
+
+.opiniao {
+    color: hsl(300, 24%, 96%);
+    font-size: smaller;
+    line-height: 2;
+    padding: 20px 0 0 0;
+}
 
 
 /* Rodapé */
+
+footer {
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
 
 .attribution {
   font-size: 11px;
