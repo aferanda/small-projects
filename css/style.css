@@ -5,6 +5,25 @@ body {
     font-size: 15px;
 }
 
+footer {
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 1024px) {
 
     body {
@@ -162,27 +181,6 @@ body {
         line-height: 2;
         padding: 20px 0 0 0;
     }
-    
-    
-    /* Rodapé */
-    
-    footer {
-        bottom: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 100%;
-    }
-    
-    .attribution {
-        font-size: 11px;
-        text-align: center;
-    }
-    
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
 
 }
 
@@ -317,25 +315,6 @@ body {
         font-size: smaller;
         line-height: 2;
         padding: 20px 0 0 0;
-    }
-
-    footer {
-        bottom: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 100%;
-        padding-top: 30px;
-    }
-    
-    .attribution {
-        font-size: 11px;
-        text-align: center;
-    }
-    
-    .attribution a {
-        color: hsl(228, 45%, 44%);
     }
 
 }
