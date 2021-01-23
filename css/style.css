@@ -5,7 +5,7 @@ body {
     font-size: 15px;
 }
 
-@media screen and (min-width: 377px) {
+@media screen and (min-width: 1024px) {
 
     body {
         max-width: 1440px;
@@ -186,7 +186,7 @@ body {
 
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1023px) {
     
     body {
         background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
@@ -280,7 +280,6 @@ body {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        margin: 20px;
     }
     
     .container-comentario1, .container-comentario2, .container-comentario3 {
@@ -289,7 +288,7 @@ body {
         border-radius: 10px;
         display: flex;   
         flex-wrap: wrap;
-        margin: 10px;
+        margin: 20px 20px 0 20px;
     }
     
     .foto {
@@ -319,4 +318,24 @@ body {
         line-height: 2;
         padding: 20px 0 0 0;
     }
+
+    footer {
+        bottom: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding-top: 30px;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
 }
