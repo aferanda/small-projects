@@ -277,17 +277,19 @@ body {
     .container-secundario {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+        margin: 20px;
     }
     
     .container-comentario1, .container-comentario2, .container-comentario3 {
         background-color: hsl(300, 43%, 22%);
         padding: 30px;
         border-radius: 10px;
-        width: 26%;
         display: flex;   
         flex-wrap: wrap;
-        width: 100%;
+        margin: 10px;
     }
     
     .foto {
