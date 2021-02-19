@@ -38,6 +38,8 @@
     margin: 25px 0 0 0;
     padding: 10px 30px;
     height: 200px;
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 20%;
 }
 
 .box .subtitle {
@@ -58,20 +60,21 @@ img {
 #box1 {
     border-color: hsl(180, 62%, 55%);
     background-image: url(images/icon-supervisor.svg);
-    background-repeat: no-repeat;
-    background-position: right 10% bottom 20%;
 }
 
 #box2 {
     border-color: hsl(0, 78%, 62%);
+    background-image: url(images/icon-team-builder.svg);
 }
 
 #box3 {
     border-color: hsl(34, 97%, 64%);
+    background-image: url(images/icon-karma.svg);
 }
 
 #box4 {
     border-color: hsl(212, 86%, 64%);
+    background-image: url(images/icon-calculator.svg);
 }
 
 /* Footer */
