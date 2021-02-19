@@ -57,6 +57,9 @@ img {
 
 #box1 {
     border-color: hsl(180, 62%, 55%);
+    background-image: url(images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 20%;
 }
 
 #box2 {
