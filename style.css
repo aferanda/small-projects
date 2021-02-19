@@ -13,13 +13,13 @@
 
 .title {
     font-weight: 200;
-    font-size: 1.6em;
+    font-size: 2em;
     color: hsl(229, 6%, 66%);
 }
 
 .subtitle {
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 2em;
     color: hsl(234, 12%, 34%);
     margin: 15px 0;
 }
@@ -37,13 +37,15 @@
     border-radius: 6px;
     margin: 25px 0 0 0;
     padding: 10px 30px;
-    height: 200px;
+    height: 200px;  
     background-repeat: no-repeat;
     background-position: right 10% bottom 20%;
+    background-color: white;
 }
 
 .box .subtitle {
     font-size: 1.3em;
+    background-color: white;
 }
 
 .box p {
@@ -51,6 +53,8 @@
     font-size: 0.9em;
     font-weight: 400;
     margin-bottom: 40px;
+    line-height: 1.5;
+    background-color: white;
 }
 
 img {
