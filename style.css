@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#principal {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 1.6em;
+    color: hsl(229, 6%, 66%);
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: hsl(234, 12%, 34%);
+    margin: 15px 0;
+}
+
+#principal p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.box {
+    box-shadow: 0 0 2em hsl(220, 9%, 81%);
+    border-top: 5px solid;
+    border-radius: 6px;
+    margin: 25px 0 0 0;
+    padding: 10px 30px;
+    height: 200px;
+}
+
+.box .subtitle {
+    font-size: 1.3em;
+}
+
+.box p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+img {
+    float: right;
+}
+
+#box1 {
+    border-color: hsl(180, 62%, 55%);
+}
+
+#box2 {
+    border-color: hsl(0, 78%, 62%);
+}
+
+#box3 {
+    border-color: hsl(34, 97%, 64%);
+}
+
+#box4 {
+    border-color: hsl(212, 86%, 64%);
+}
+
+/* Footer */
+    
+footer {
+    bottom: 0;
+    margin: 50px 0 0 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 599px) {
+    html {
+        width: 375px;
+        height: 1360px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 90px 30px; 
+    }
+
+    #principal {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    html {
+        width: 1440px;
+        height: 922px;
+    }
+
+    body {
+        margin: 90px 100px;
+        height: 100%;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    #principal p {
+        text-align: center;
+        padding: 0 30%;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 480px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .box {
+        min-width: 250px;
+        max-width: 300px;
+    }
+
+    #box1, #box4 {
+       margin: 127px 0;
+    }
+
+    #box2, #box3 {
+        margin: 0 0;
+    }
+}
