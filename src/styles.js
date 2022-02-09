@@ -47,6 +47,7 @@ export const FormContainer = styled.div`
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
+    color: var(--dark-blue);
     border-radius: 6px;
     border: 2px solid #ededed;
     height: 60px;
