@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import icon from './images/icon-error.svg';
 
 export const Main = styled.div`
   align-items: center;
@@ -38,16 +39,19 @@ export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0;
+    padding: 20px 0;
     box-shadow: 0 7px 1px 0 #00000030;
   }
 
   input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
     border-radius: 6px;
     border: 2px solid #ededed;
     height: 60px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 85%;
     padding: 0 30px;
   }
@@ -57,14 +61,28 @@ export const FormContainer = styled.div`
     font-size: 0.9rem;
     font-weight: 600;
   }
-
+  
   input:focus {
+    border: none;
     outline: 1px solid var(--blue);
+  }
+  
+  input:invalid, input.invalid {
+    font-family: 'Poppins', sans-serif;
+    color: var(--red);
+    font-weight: 600;
+    outline: none;
+    border: 2px solid var(--red);
+    background: url(${icon}) no-repeat right 5% bottom 50%;
   }
   
   div {
     font-size: 0.7rem;
     color: var(--red);
+    width: 85%;
+    text-align: end;
+    font-style: italic;
+    margin-top: 5px;
   }
 
   button[type="button"] {
@@ -77,6 +95,7 @@ export const FormContainer = styled.div`
     height: 60px;
     font-size: 0.9rem;
     font-weight: 400;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
 
@@ -97,6 +116,12 @@ export const FormContainer = styled.div`
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:disabled {
+    background-color: rgba(56, 204, 140, 51%);
   }
 
   p {
