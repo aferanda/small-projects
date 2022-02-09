@@ -1,20 +1,19 @@
 import React from 'react';
-import Footer from './components/Footer';
-import Forms from './components/Forms';
-import { Main, Text } from './styles';
-import './styles/global.css';
+
+import './styles/globals.css';
+import GlobalStyle from './styles/globals';
+import Forms from './components/forms/Forms';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <>
-      <Main>
-        <Text>
-          <h1>Learn to code by watching others</h1>
-          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
-          </p>
-        </Text>
+      <GlobalStyle />
+      <div className='container'>
+        <Header />
         <Forms />
-      </Main>
+      </div>
       <Footer />
     </>
   );

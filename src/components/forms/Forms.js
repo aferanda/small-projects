@@ -1,7 +1,8 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { FormContainer } from '../styles';
+
+import { FormContainer } from './styles';
 
 export default function Forms() {
   return (

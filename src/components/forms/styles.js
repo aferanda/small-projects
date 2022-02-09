@@ -1,40 +1,16 @@
 import styled from 'styled-components';
-import icon from './images/icon-error.svg';
-
-export const Main = styled.div`
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  display: flex;
-  padding: 0 150px;
-`;
-
-export const Text = styled.div`
-  width: 50%;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 28px;
-
-  h1 {
-    color: white;
-    font-size: 3rem;
-    line-height: 55px;
-    letter-spacing: 0.5px;
-  }
-
-  p {
-    color: white;
-    font-size: 1rem;
-    line-height: 26px;
-  }
-`;
+import icon from '../../images/icon-error.svg';
 
 export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-left: 22px;
+
+  @media(max-width: 800px) {
+    width: 100%;
+    margin: 63px 0;
+  }
 
   form {
     background-color: white;
@@ -46,6 +22,11 @@ export const FormContainer = styled.div`
     box-shadow: 0 8px 1px 0 #00000020;
     margin-bottom: 8px;
     width: 540px;
+
+    @media(max-width: 800px) {
+      padding: 8px 0 7px;
+      width: 100%;
+    }
   }
 
   input {
@@ -59,20 +40,27 @@ export const FormContainer = styled.div`
     margin-top: 18px;
     width: 85%;
     padding: 0 30px;
+
+    @media screen {
+      border: 1px solid #dedede;
+      height: 56px;
+      margin-top: 16px;
+      padding: 0 18px;
+    }
   }
 
-  input::placeholder {
+  &::placeholder {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
   }
   
-  input:focus {
+  &:focus {
     border: none;
     outline: 1px solid var(--blue);
   }
   
-  input:invalid, input.invalid {
+  &:invalid, input.invalid {
     font-family: 'Poppins', sans-serif;
     color: var(--red);
     font-weight: 600;
@@ -105,6 +93,14 @@ export const FormContainer = styled.div`
     margin-bottom: 24px;
     width: 540px;
 
+    @media(max-width: 800px) {
+      font-size: 1rem;
+      height: 88px;
+      line-height: 27px;
+      padding: 0 50px;
+      width: 100%;
+    }
+
     span {
       font-weight: 600;
     }
@@ -124,6 +120,10 @@ export const FormContainer = styled.div`
     font-weight: 400;
     margin-top: 20px;
     cursor: pointer;
+
+    @media(max-width: 800px) {
+      margin-top: 16px;
+    }
   }
 
   button[type="submit"]:disabled {
@@ -135,27 +135,19 @@ export const FormContainer = styled.div`
     color: #c4c1c1;
     margin-top: 13px;
 
+    @media(max-width: 800px) {
+      font-size: 0.7rem;
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 17px;
+      padding: 0 20px;
+      text-align: center;
+      width: 85%;
+    }
+
     span {
       color: var(--red);
       font-weight: 600;
     }
   }
 `
-
-export const FooterStyle = styled.footer`
-  font-family: 'Poppins', sans-serif;
-  color: #ededed;
-
-  p {
-    font-size: 0.7rem;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-  }
-
-  a {
-  text-decoration: none;
-  color: #ededed;
-  }
-`;
