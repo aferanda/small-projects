@@ -12,26 +12,29 @@ export const Main = styled.div`
 export const Text = styled.div`
   width: 50%;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
 
   h1 {
     color: white;
     font-size: 3rem;
     line-height: 55px;
-    margin-bottom: 30px;
+    letter-spacing: 0.5px;
   }
 
   p {
     color: white;
     font-size: 1rem;
-    line-height: 28px;
+    line-height: 26px;
   }
 `;
 
 export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px;
   width: 50%;
+  margin-left: 22px;
 
   form {
     background-color: white;
@@ -39,8 +42,10 @@ export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    box-shadow: 0 7px 1px 0 #00000030;
+    padding: 20px 0 44px;
+    box-shadow: 0 8px 1px 0 #00000020;
+    margin-bottom: 8px;
+    width: 540px;
   }
 
   input {
@@ -50,9 +55,8 @@ export const FormContainer = styled.div`
     color: var(--dark-blue);
     border-radius: 6px;
     border: 2px solid #ededed;
-    height: 60px;
-    width: 100%;
-    margin-top: 20px;
+    height: 58px;
+    margin-top: 18px;
     width: 85%;
     padding: 0 30px;
   }
@@ -89,19 +93,20 @@ export const FormContainer = styled.div`
   button[type="button"] {
     border: none;
     border-radius: 5px;
-    box-shadow: 0 7px 1px 0 #00000030;
+    box-shadow: 0 8px 1px 0 #00000020;
     background-color: var(--blue);
     color: white;
     border-radius: 10px;
     height: 60px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 400;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    width: 540px;
 
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 
@@ -111,7 +116,7 @@ export const FormContainer = styled.div`
     box-shadow: 1px -3px 1px 1px #00000014 inset;
     color: white;
     border-radius: 7px;
-    height: 60px;
+    height: 56px;
     width: 85%;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -128,7 +133,7 @@ export const FormContainer = styled.div`
   p {
     font-size: 0.7rem;
     color: #c4c1c1;
-    margin-top: 20px;
+    margin-top: 13px;
 
     span {
       color: var(--red);

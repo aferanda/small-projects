@@ -30,7 +30,7 @@ export default function Forms() {
           }, 400);
         }}
       >
-        {({ initialValues, values, isValid, errors, touched }) => (
+        {({ isValid, errors, touched, dirty }) => (
           <FormContainer>
             <button type='button'><span>Try it free 7 days</span> then $20/mo. thereafter</button>
             <Form>
@@ -64,7 +64,7 @@ export default function Forms() {
               <ErrorMessage name='password' component='div' />
               <button 
                 type='submit'
-                disabled={isValid && initialValues !== values ? false : true}
+                disabled={isValid && dirty ? false : true}
               >
                 claim your free trial
               </button>
