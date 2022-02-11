@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
 import bg_desktop from '../images/bg-intro-desktop.png';
 import bg_mobile from '../images/bg-intro-mobile.png';
 
@@ -33,19 +34,18 @@ export default createGlobalStyle`
       height: auto;
     }
   }
-  
-  .container {
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    display: flex;
-    padding: 0 150px;
-    
-    @media(max-width: 800px) {
-      flex-direction: column;
-      padding: 90px 24px 0;
-      height: auto;
-    }
-  }
+`;
 
-`
+export const Container = styled.div`
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  padding: 0 150px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 90px 24px 0;
+    height: auto;
+  }
+`;
