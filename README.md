@@ -49,5 +49,5 @@ Users should be able to:
 
 - Website - [Amanda Fernandes](https://github.com/aferanda)
 - Frontend Mentor - [@aferanda](https://www.frontendmentor.io/profile/aferanda)
-- Twitter - [@aferanda](https://www.twitter.com/aferanda)
+- Linkedin - [@aferanda](https://www.linkedin.com/in/aferanda/)
 
