@@ -47,7 +47,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Amanda Fernandes](https://github.com/aferanda)
 - Frontend Mentor - [@aferanda](https://www.frontendmentor.io/profile/aferanda)
 - Linkedin - [@aferanda](https://www.linkedin.com/in/aferanda/)
 
