@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/aferanda/intro-component-with-sign-up-form)
-- Live Site URL: [Link](https://intro-component-with-sign-up-form-aferanda.vercel.app/)
+- Live Site URL: [Link](https://sign-up-form-aferanda.vercel.app/)
 
 ## My process
 
